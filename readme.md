@@ -1,18 +1,18 @@
-# YouID
+# `youid`
 
-YouID is a lightweight JavaScript function that generates unique identifiers (UIDs) from strings. It can also generate random UIDs if no string input is provided. YouID is flexible, allowing you to specify the length of the UID.
+`youid` is a lightweight JavaScript function that generates unique identifiers (UIDs) from strings. It can also generate random UIDs if no string input is provided. `youid` is flexible, allowing you to specify the length of the UID.
 
 ## Installation
 
-To install YouID as an npm package:
+To install `youid` as an npm package:
 
 ```bash
-npm install youid
+npm install `youid`
 ```
 
 ## Usage
 
-YouID provides a simple API to generate UIDs from strings or create random UIDs. The function takes two optional parameters:
+`youid` provides a simple API to generate UIDs from strings or create random UIDs. The function takes two optional parameters:
 
 - `str` (optional): The input string from which the UID will be generated.
 - `length` (optional): The desired length of the UID.
@@ -22,7 +22,7 @@ YouID provides a simple API to generate UIDs from strings or create random UIDs.
 If using a module bundler:
 
 ```javascript
-import youid from 'youid';
+import `youid` from '`youid`';
 ```
 
 ### Generating a UID
@@ -31,7 +31,7 @@ import youid from 'youid';
 To generate a UID based on a string:
 
 ```javascript
-const uid = youid('HelloWorld');
+const uid = `youid`('HelloWorld');
 console.log(uid); // Example output: "j1m3q4v9"
 ```
 
@@ -39,21 +39,21 @@ console.log(uid); // Example output: "j1m3q4v9"
 You can control the length of the generated UID:
 
 ```javascript
-const uid = youid('HelloWorld', 10);
+const uid = `youid`('HelloWorld', 10);
 console.log(uid); // Example output: "j1m3q4v900"
 ```
 
 #### 3. Generating a Random UID
-If no string is provided, YouID generates a random UID:
+If no string is provided, `youid` generates a random UID:
 
 ```javascript
-const randomUID = youid();
+const randomUID = `youid`();
 console.log(randomUID); // Example output: "x5y7z1w8a2"
 ```
 
 ### Function Signature
 ```javascript
-const youid = (str?: string, length?: number) => string;
+const `youid` = (str?: string, length?: number) => string;
 ```
 
 ### Parameters
@@ -72,33 +72,33 @@ const youid = (str?: string, length?: number) => string;
 ### Basic Examples
 #### Hash-Based UID:
 ```javascript
-const uid = youid('MyString');
+const uid = `youid`('MyString');
 console.log(uid); // Example output: "k9l2m5"
 ```
 
 #### Length-Controlled UID:
 ```javascript
-const uid = youid('AnotherString', 12);
+const uid = `youid`('AnotherString', 12);
 console.log(uid); // Example output: "k9l2m5n0pqr8"
 ```
 
 #### Random UID:
 ```javascript
-const randomUID = youid(null, 8);
+const randomUID = `youid`(null, 8);
 console.log(randomUID); // Example output: "abc123xy"
 ```
 
 ### Real-World Usage
 #### Generating IDs for HTML Elements:
 ```javascript
-const elementID = youid('button-submit', 10);
+const elementID = `youid`('button-submit', 10);
 document.getElementById('my-element').id = elementID;
 console.log(elementID); // Example output: "b8t9w7z6x1"
 ```
 
 #### Random UIDs for Testing:
 ```javascript
-const randomIDGenerate = youid();
+const randomIDGenerate = `youid`();
 console.log(randomIDGenerate); // Example output: "a9b3c5d7"
 ```
 
@@ -110,11 +110,11 @@ console.log(randomIDGenerate); // Example output: "a9b3c5d7"
 
 ## License
 
-YouID is open-source software licensed under the [MIT License](LICENSE).
+`youid` is open-source software licensed under the [MIT License](LICENSE).
 
 ## Contributions
 
-Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/devnax/youid).
+Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/devnax/`youid`).
 
 ---
 
