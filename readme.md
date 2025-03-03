@@ -119,4 +119,3 @@ Contributions are welcome! Please open an issue or submit a pull request on [Git
 ---
 
 For any issues or inquiries, please contact the [maintainer](mailto:edvnaxrul@gmail.com).
-
