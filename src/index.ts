@@ -1,5 +1,5 @@
 const youid = (str?: string | null, length?: number) => {
-  if (!str) return (length?: number) => (Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)).substring(0, length);
+  if (!str) return (Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)).substring(0, length);
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
     const char = str.charCodeAt(i);
