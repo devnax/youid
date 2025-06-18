@@ -1,9 +1,9 @@
 {
    "name": "youid",
-   "version": "1.0.10",
+   "version": "1.0.11",
    "description": "A lightweight utility to generate unique identifiers (UIDs) from strings or randomly.",
-   "main": "./cjs/index.js",
-   "module": "./index.js",
+   "main": "./index.js",
+   "module": "./index.mjs",
    "types": "./index.d.ts",
    "type": "module",
    "author": {
@@ -22,10 +22,10 @@
    "devDependencies": {
       "@types/react": "^19.0.2",
       "@types/react-dom": "^19.0.2",
-      "makepack": "^1.6.8",
       "react": "^19.0.0",
       "react-dom": "^19.0.0",
-      "typescript": "^4.4.2"
+      "typescript": "^4.4.2",
+      "makepack": "^1.7.3"
    },
    "keywords": [
       "uid",
@@ -38,25 +38,9 @@
    "sideEffects": false,
    "exports": {
       ".": {
-         "require": {
-            "types": "./index.d.ts",
-            "default": "./cjs/index.js"
-         },
-         "import": {
-            "types": "./index.d.ts",
-            "default": "./index.js"
-         }
-      },
-      "./*": {
-         "require": {
-            "types": "./*.d.ts",
-            "default": "./cjs/*.js"
-         },
-         "import": {
-            "types": "./*.d.ts",
-            "default": "./*.js"
-         }
-      },
-      "./cjs": null
+         "import": "./index.mjs",
+         "require": "./index.js",
+         "types": "./index.d.ts"
+      }
    }
 }
